@@ -1,0 +1,26 @@
+extends layout
+block header
+    h1.center= title
+    h2.center= mode
+    a(href="/", class="center").
+        Go to home
+block surface
+    div.center.v-space.frame
+        div(id="streaming")
+    div.center.v-space
+        video.frame(id="record" controls)
+block stylesheets
+    style(rel='stylesheet').
+        #streaming canvas {
+            width: 100%;
+            height: 100%;
+        }
+block scripts
+    script(type="text/javascript", src="/socket.io/socket.io.js")
+    script(type="text/javascript", src="/javascripts/drone-common-piloting.js")
+    script(type="text/javascript", src="/dronestream/nodecopter-client.js")
+    script(type='text/javascript').
+        (function($) {
+            var commonPilotingController = new CommonPilotingController();
+            commonPilotingController.playRecord();
+        })(jQuery);

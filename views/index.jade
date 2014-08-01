@@ -1,0 +1,20 @@
+extends layout
+
+block header
+    h1.center= title
+block pannel
+    div.center.v-space
+        button(id='bt-auto', class='big').
+            Auto Piloting Mode
+        button(id='bt-manual', class='big').
+            Manual Piloting Mode
+block scripts
+    script(type='text/javascript').
+        (function($) {
+            $("#bt-auto").click(function(){
+                window.location = "/auto";
+            });
+            $("#bt-manual").click(function(){
+                window.location = "/manual";
+            });
+        })(jQuery);

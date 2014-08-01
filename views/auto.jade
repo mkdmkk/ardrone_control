@@ -1,0 +1,17 @@
+//
+   Created by mkk on 7/23/14.
+extends common
+block pannel
+    div.center
+        button(id="bt-start", class="medium").
+            Start
+append scripts
+    script(src='/javascripts/drone-auto-piloting.js')
+    script(type='text/javascript').
+        (function($) {
+            var streamingHandler = new StreamingHandler();
+            var manualPilotingController = new ManualPilotingController();
+            $("button").click(function(e) {
+                //
+            });
+        })(jQuery);

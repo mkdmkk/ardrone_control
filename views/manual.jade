@@ -1,0 +1,32 @@
+//
+   Created by mkk on 7/23/14.
+extends common
+block pannel
+    div.center.v-space
+        div.center
+            button(id="bt-takeoff", class="medium").
+                Take-off
+            button(id="bt-elevate", class="medium").
+                Elevate
+            button(id="bt-descend", class="medium").
+                Descend
+            button(id="bt-land", class="medium").
+                Land
+        div.center
+            button(id="bt-stay", class="medium").
+                Stay
+            button(id="bt-turn", class="medium").
+                Turn
+            button(id="bt-tilt", class="medium").
+                Tilt
+            button(id="bt-flip", class="medium").
+                Flip
+append scripts
+    script(src='/javascripts/drone-manual-piloting.js')
+    script(type='text/javascript').
+        (function($) {
+            var manualPilotingController = new ManualPilotingController();
+            $("button").click(function(e) {
+                //
+            });
+        })(jQuery);

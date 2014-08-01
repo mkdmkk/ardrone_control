@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        script(src='/libraries/jquery-1.11.1.min.js')
+        script(src='/setting/global.js')
+        script(src='/javascripts/common.js')
+    body
+        block header
+        div(style="min-height:300px")
+            block surface
+            block pannel
+        footer.v-space
+            p.center!= copyright
+        block stylesheets
+        block scripts

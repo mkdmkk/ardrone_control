@@ -1,0 +1,48 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+div, canvas {
+    padding: 0px;
+    margin: 0px;
+}
+
+.center {
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.v-space {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.big {
+    padding: 20px;
+    margin: 10px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.medium {
+    padding: 10px;
+    margin: 5px;
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+.frame {
+    width: 500px;
+    height: 281px;
+    border: 1px solid black;
+}
